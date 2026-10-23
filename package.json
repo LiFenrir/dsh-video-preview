@@ -1,0 +1,61 @@
+{
+  "name": "@lifenrir/dsh-video-preview",
+  "version": "0.1.0",
+  "description": "在 DSH 右侧预览面板直接播放工作区视频。Native video playback in DSH's right-side document preview.",
+  "license": "MIT",
+  "author": "LiFenrir",
+  "type": "module",
+  "icon": "icon.svg",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "video",
+    "video-preview",
+    "media",
+    "mp4",
+    "webm"
+  ],
+  "engines": {
+    "node": "^22.19 || >=24",
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiFenrir/dsh-video-preview.git"
+  },
+  "homepage": "https://github.com/LiFenrir/dsh-video-preview#readme",
+  "bugs": "https://github.com/LiFenrir/dsh-video-preview/issues",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
