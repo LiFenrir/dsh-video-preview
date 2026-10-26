@@ -1,6 +1,6 @@
 {
   "name": "@lifenrir/dsh-video-preview",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "在 DSH 右侧预览面板直接播放工作区视频。Native video playback in DSH's right-side document preview.",
   "license": "MIT",
   "author": "LiFenrir",
@@ -36,8 +36,8 @@
     "webm"
   ],
   "engines": {
-    "node": "^22.19 || >=24",
-    "dsh": ">=0.2.1-rc.2"
+    "node": ">=24.9",
+    "dsh": ">=0.2.1-rc.3"
   },
   "publishConfig": {
     "access": "public"
